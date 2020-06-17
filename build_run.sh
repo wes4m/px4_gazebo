@@ -3,6 +3,9 @@
 # for gazebo GUI (not neccessary)
 xhost +
 
+# decompress
+tar -xvf firmware.tar.gz
+
 # Create command for running fuzz_input
 echo "fuzz_input" > firmware/fuzzing-tools/iris
 
