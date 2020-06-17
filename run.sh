@@ -1,20 +1,8 @@
 #!/bin/bash
 
+
 # for gazebo GUI (not neccessary)
 xhost +
-
-# decompress
-tar -xvf firmware.tar.gz
-
-# Create command for running fuzz_input
-echo "fuzz_input" > firmware/fuzzing-tools/iris
-
-# Create input pipe FIFO file
-rm firmware/fuzzing-tools/pipe
-mkfifo firmware/fuzzing-tools/pipe
-
-# build image
-docker build . -t px4_gazebo_image
 
 # Kill check
 docker stop px4_gazebo
