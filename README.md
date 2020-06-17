@@ -29,4 +29,5 @@ cd px4_gazebo
 ```
 ./mavlink_msg.sh <input>
 ```
+Or just directly write to `firmware/fuzzing-tools/pipe`
 Input path: `PX4 > uORB > MAVLINK`
