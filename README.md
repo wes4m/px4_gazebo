@@ -32,3 +32,9 @@ cd px4_gazebo
 Or just directly write to `firmware/fuzzing-tools/pipe`
 
 Input path: `PX4 > uORB > MAVLINK`
+
+### TODO
+
+* Add fuzzer to container? 
+* Test AFL on stdin
+* Construct a MavLink dictionary for AFL
